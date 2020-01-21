@@ -2,18 +2,21 @@
 using System.Collections;
 using UnityEditor;
 
-class VrchatSdkHelper : EditorWindow {
+namespace E1on {
 
-    [MenuItem ("VrchatSdkHelper/Window")]
+    class VrchatSdkHelper : EditorWindow {
 
-    public static void  ShowWindow () {
-        EditorWindow.GetWindow(typeof(VrchatSdkHelper));
-    }
+        [MenuItem ("VRChat SDK Helper/Window")]
 
-    void OnGUI () {
+        public static void  ShowWindow () {
+            EditorWindow.GetWindow(typeof(VrchatSdkHelper));
+        }
 
-    	EditorGUILayout.LabelField ("VrchatSdkHelper");
-    	Debug.Log("Hello");
+        void OnGUI () {
+
+            EditorGUILayout.LabelField ("VrchatSdkHelper");
+
+        }
 
     }
 
